@@ -1,0 +1,125 @@
+\chapter{Modélisation et commande d'un robot mobile}
+\section{Description d'un robot mobile autonome}
+AGV, AMR, Cobots, robots mobiles, exosquelettes, robots collaboratifs … la robotique industrielle est devenue un vaste domaine dans lequel il n’est pas évident de se repérer. Cet article traite de la notion de Robot Mobile Autonome, dit AMR.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=14cm]{assets/robot_autonome.jpg}
+    \caption{Robot mobile pour recharger les vehicules electriques \cite{DescriptionRobotMobile}}
+    \label{Tux}
+    \end{figure}
+
+L’AMR est un robot collaboratif dans le sens où il fonctionne au plus proche des opérateurs. Ils opèrent au milieu des Hommes et des Machines, au coeur des zones de travail et dans les univers encombrés.
+
+L’AMR est doté d’un haut degré d’autonomie, il peut se déplacer dans un environnement plus ou moins vaste sans l’intervention humaine. Il se déploie facilement et s’adapte à la configuration d’un site, ne nécessitant pas de modification coûteuse d’infrastructure. De même, si l’infrastructure et le besoin viennent à évoluer, les robots peuvent être reprogrammés facilement. Enfin, ce type de robots permet d’automatiser les tâches de transport et le déplacement de marchandises à l’intérieur d’un bâtiment, et constitue une solution agile pour la transformation vers l’Usine 4.0 et la supply chain digitalisée. Le robot mobile autonome est donc le symbole d’une mobilité industrielle nouvelle génération.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=14cm]{assets/Robot_AMR.jpg}
+    \caption{Exemple d'un robot autonome pour la livraison \cite{italianingenioMobiliteIndustrieRobots2021}}
+    \label{amr}
+    \end{figure}
+\subsection{Quelles différences entre un AMR et un AGV ?
+}
+Contrairement aux AGV (Automated Guided Vehicle) qui ont des trajectoires dédiées, les AMR sont totalement libres et s’adaptent aux environnements dynamiques. L’AGV est guidé par des rails ou repères au sol, tandis que l’AMR navigue en total autonomie dans un environnement cartographié au préalable. Les robots mobiles autonomes sont dotés de technologies de pointe leur permettant de naviguer avec précision dans un périmètre donnée, d’éviter les obstacles et d’évoluer sans risque de collision. La notion de sécurité est un sujet auquel les constructeurs sont particulièrement vigilants, de part les nombreuses interactions entre l’homme et la machine.
+\section{applications pour ce les robots autonomes}
+Un AMR peut intervenir autant sur des missions « simples » telles qu’une préparation de commande ou une opération picking, que dans des concepts d’automatisation plus complexes et globaux, en s’interfaçant à des périphériques comme des convoyeurs, des lignes de production, des îlots intégrés, ou des postes de travail. Principalement utilisés dans le monde de l’Industrie pour déplacer de manière autonome des marchandises (usines, ateliers ou entrepôts, …), l’usage des robots ne sont pas pour autant limités au secteur industriel. Les gains en mobilité attribués au fil des années et leur grande polyvalence ont permis d’élargir largement les applications :
+\begin{itemize}
+    \item Missions de logistique (kitting, alimentation des bords de lignes et de production dans l’Industrie (transferts de pièces).
+    \item Opérations de manutention, de préparation de commandes, de pick and drop dans la Logistique et ses entrepôts.
+    \item L’alimentation des rayonnages ou la préparation Drive dans la Distribution/Retail.
+    \item Dans les univers E-commerce, ils contribuent à la gestion des entrées de colis, la ramasse, le tri, la ventilation, et la gestion des retours et sorties.
+    \item Dans les univers E-commerce, ils contribuent à la gestion des entrées de colis, la ramasse, le tri, la ventilation, et la gestion des retours et sorties.
+    \item Leur flexibilité leur permet également d’intervenir dans une multitude d’autres domaines, comme le transport, les services et les établissements de santé.
+
+\end{itemize}
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=14cm]{assets/amr_sort.jpg}
+    \caption{Exemple d'un robot autonome pour le tri des stocks \cite{LargescaleAMRSorting2020}}
+    \label{amr_sort}
+    \end{figure}
+
+
+
+
+Leur flexibilité leur permet également d’intervenir dans une multitude d’autres domaines, comme le transport, les services et les établissements de santé.
+
+
+\section{Caracteristiques des robot mobile}
+Les robots Meanwhile sont dotés de l’intelligence artificielle spécialisée dans la navigation en intérieur (SLAM). Le SLAM, Simultaneous Localisation And Mapping, permet au robot de construire son environnement et de modifier son comportement en fonction des obstacles non cartographiés tout en se localisant en temps réel. Afin de se déplacer en toute autonomie et sans trajectoire prédéfinie, le robot va combiner les informations qui lui sont propre avec les informations de son environnement (renvoyées par ses lasers et capteurs .)
+
+ Pour être considéré comme tel, un AMR doit répondre aux caractéristiques suivantes :
+
+Planification de mouvement
+Pour réaliser sa mission, l’AMR a la capacité d’optimiser son trajet. Sa configuration de départ va définir sa trajectoire globale et va évoluer en fonction des données récupérées en temps réel ce qui va altérer sa trajectoire locale. L’AMR va ainsi calculer, en permanence, son chemin sans collision. En d’autres termes, pour réaliser sa mission, le robot Meanwhile optimise son trajet, qu’il a lui-même défini au départ (trajectoire globale), tout en évitant les obstacles qui se présentent éventuellement à lui (trajectoire locale).
+
+Localisation
+Pour pouvoir planifier son trajet en toute autonomie, les robots mobiles Meanwhile sont en mesure de se localiser dans leur environnement. Ils utilisent un certain nombre de capteurs embarqués, tel que des scrutateurs lasers, lasers verticaux etc. Pour être en permanence localisés, les robots Meanwhile vont, en temps réel, comparer leur cartographie à l’environnement modélisé par leurs capteurs. Ainsi, tout défaut de positionnement intrinsèque est instantanément corrigé et le robot est en permanence localisé.Par ailleurs, lorsque les environnements de travail sont très dynamiques, il est possible d’améliorer la localisation du robot par un système de triangulation lumineuse, appelé Acuity.
+
+Navigation naturelle 
+Les robots mobiles sont en mesure de calculer les commandes des actionneurs du système permettant de réaliser le mouvement planifié. Le robot planifie sa propre trajectoire. Il suit le chemin prévu (trajectoire globale) tout en évitant les obstacles non cartographiés sur le chemin. Si le robot rencontre des obstacles, il modifie sa trajectoire « locale » pour les éviter mais si ce dernier ne peut pas continuer (par exemple, une porte est fermée), il replanifie globalement son trajet (par exemple, trouver une porte différente.)
+
+Évitement réactif d’obstacles 
+En complément du scrutateur laser principal de sécurité, situé à 200mm du sol, les cobots mobiles Meanwhile sont équipés de différents capteurs leurs permettant de contourner et d’éviter les obstacles :
+
+Un scrutateur laser de « détection de pieds » situé à 60mm du sol. Ce capteur permet au Cobot Mobile de détecter et de contourner tout obstacle situé au niveau du sol.
+
+Une rangée de sonars situés à l’arrière du Cobot Mobile. Ces capteurs permettent un mouvement de recul sécuritaire du Cobot Mobile. A noter que le Cobot Mobile ne recule que dans des zones identifiables et jamais de sa propre initiative (appel d’une fonction au cours d’une séquence) (accostage de la station de charge par exemple).
+
+Les scrutateurs lasers verticaux, permettant de créer deux plans de part et d’autre du Cobot Mobile. Il peut alors détecter de manière fiable tout objet surplombant situé dans un plan différent des scrutateurs horizontaux (fourches de chariots élévateurs, tablettes opérateur, etc…) ainsi que toute déclivité dans le sol. Ces données sont utilisées lors de la navigation et permettent au Cobot Mobile de se mouvoir de façon optimale entre les obstacles dans des environnements complexes.
+
+Déploiement rapide 
+L’installation des robots mobiles autonomes Meanwhile est réalisée dans des délais extrêmement courts car il n’est pas nécessaire de modifier l’infrastructure existante. De même que les robots peuvent être reprogrammés facilement, si l’infrastructure et le besoin évoluent. (Nos clients sont en mesure de modifier eux-mêmes les points de livraisons.)
+
+\section{Structure de la commande d’un robot mobile}
+%https://www.ummto.dz/dspace/bitstream/handle/ummto/7624/LamaraNabil.pdf?sequence=1&isAllowed=y
+L'objectif de la robotique est d'atteindre un objectif dans son environnement en évitant les obstacles. Le problème que l'on doit résoudre est de déterminer les commandes appropriées en fonction des données capteurs qu'elles commandent doivent être envoyées à chaque instant au robot pour atteindre cet objectif. Donc l'idée est de permettre au robot d'évoluer dans un monde prévue à l'origine pour l'homme. 
+
+
+\subsection{Perception et modélisation de l'environnement}
+
+Le robot doit être muni d’un système de perception capable de fournir des informations précises sur l'état de l’environnement qui l’entoure, afin de pouvoir identifier et regrouper des éléments utiles pour une représentation fiable et consistante de cet environnement.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=14cm]{assets/perception.png}
+    \caption{Exemple de la perception d'un robot mobile }
+    \label{perception}
+    \end{figure}
+
+\subsection{Communication homme machine}
+
+La communication machine est très essentielle pour cela des interfaces de plus en plus conviviale sont développés.
+La communication est réalisée à l’aide de multiples supports : écrit, visuel, ou encor sonore. Le module de communication semble prendre de plus en plus d’importance à l’heure actuelle.
+\subsection{Commande}
+
+Architecture traditionnelle de décomposition du programme de contrôle du robot en différents modules de fonctionnement est donnée comme suit :
+caoture decean 
+
+Du monde abstrait au monde concret, la planification des actions et le contrôle des déplacements se situent dans le monde idéal, monde perçu et le monde réel cette décomposition est classique pour les systèmes automatiques de commande.
+\section{Navigation autonome d’un robot mobile
+}
+Généralement, la navigation d’un robot mobile est une tâche qui consiste à trouver un mouvement libre dans l’espace de configuration sans collision avec les obstacles proche du robot. Ce mouvement amène le robot d’une configuration initiale, vers une position finale désirée.
+Le robot mobile doit mettre en œuvre certains nombres de fonctionnalités pour exécuter une tâche de navigation autonome :
+\subsection{Localisation}
+
+Le succès dans l’exécution d’une tâche associée à un déplacement est directement lié à la capacité des robots de se positionner par rapport à son environnement. Cette localisation doit être la plus précise possible, et dépend de la fiabilité, de la représentation de l’environnement construite par le système et de la perception du robot.
+\subsection{Planification et exécution de mouvements}
+
+Le robot doit être capable de se déplacer de façon sûre à travers l’espace libre de l’environnement, tenant compte de la présence d’éventuels obstacles statiques et dynamiques. Le problème de déplacement du robot dans l’environnement rencontre les mêmes difficultés que la localisation et la modélisation liées à la présence d’incertitudes qui font que le déplacement commandé ne sera pas de manière générale exécuté parfaitement.
+Ces fonctions ne sont pas indépendantes. On note, bien évidemment, que la perception de l’environnement intervient dans toutes. La planification de mouvement s’intéresse au calcul automatique de chemins sans collision pour un robot quelconque (robot mobile, bras manipulateur, etc.) évoluant dans un environnement encombrés d’obstacles.Historiquement les premières études ont été basées sur le cycle classique en intelligence artificielle : perçoit, pense, agit.
+La décomposition du problème a été à l’origine de nombreux travaux. La présence de multiples modules attachés chacun à la résolution d’un sous problème nécessite la mise en place d’une organisation permettant la construction d’un système complexe à partir ces briques élémentaires. Cette organisation est appelée architecture de contrôle.
+\subsection{Suivi de trajectoire
+}
+Cette étape consiste à calculer les commandes des actionneurs du système permettant de réaliser le mouvement planifié. Un robot étant considéré comme un système dynamique. [On utilise des méthodes de commande à retour d’état pour l’asservissement de système sur une trajectoire de référence].
+\subsection{Evitement d’obstacles et parking
+}
+
+L’évitement des obstacles est un comportement de base présent quasiment dans tous les mouvements des robots mobiles. Cependant pour des anomalies comme une localisation imparfaite, le suivi de la trajectoire planifiée ne garantie pas l’absence de collision avec les objets statique ou dynamique existant.
+L’étape finale de la navigation autonome s’appelle Parking, elle nécessite une forte précision pour l’atteinte du bute finale.
+
+
+
+
