@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.22)  9 MAY 2022 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.22)  14 MAY 2022 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,7 +343,11 @@ Package glossaries Info: Writing glossary file main.glo on input line 1.
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count310
 \l__pdf_internal_box=\box60
-) (main.aux)
+) (main.aux
+
+LaTeX Warning: Label `amr' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
@@ -421,11 +425,11 @@ Package glossaries Warning: entry `MSA' has already been defined in the preamble
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (Parts/remerciements.tex) (Parts/resume.tex) (main.lof
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
  (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
  (/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
@@ -445,21 +449,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Chapter 1.
-) (Parts/Chapter1.tex [3
 
-]
+Overfull \hbox (3.14995pt too wide) in paragraph at lines 4--5
+\T1/cmr/m/n/12 Les robots font d^^e9-sor-mais par-tie in-t^^e9-grante de notre quo-ti-dien. Les in-g^^e9nieurs et les chercheurs
+ []
+
+<assets/Evolution_robots_autonomes.png, id=11, 579.16376pt x 259.97125pt>
+File: assets/Evolution_robots_autonomes.png Graphic file (type png)
+<use assets/Evolution_robots_autonomes.png>
+Package pdftex.def Info: assets/Evolution_robots_autonomes.png  used on input line 19.
+(pdftex.def)             Requested size: 398.33858pt x 178.80516pt.
+[3
+
+ <./assets/Evolution_robots_autonomes.png>]) (Parts/Chapter1.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[4]
 Chapter 2.
-<assets/robot_autonome.jpg, id=14, 1806.75pt x 1129.21875pt>
+<assets/robot_autonome.jpg, id=20, 1806.75pt x 1129.21875pt>
 File: assets/robot_autonome.jpg Graphic file (type jpg)
 <use assets/robot_autonome.jpg>
 Package pdftex.def Info: assets/robot_autonome.jpg  used on input line 7.
 (pdftex.def)             Requested size: 398.33858pt x 248.96304pt.
-<assets/Robot_AMR.jpg, id=15, 1204.5pt x 630.355pt>
+<assets/Robot_AMR.jpg, id=21, 1204.5pt x 630.355pt>
 File: assets/Robot_AMR.jpg Graphic file (type jpg)
 <use assets/Robot_AMR.jpg>
 Package pdftex.def Info: assets/Robot_AMR.jpg  used on input line 17.
 (pdftex.def)             Requested size: 398.33858pt x 208.46024pt.
-[4
+[5
 
  <./assets/robot_autonome.jpg>]
 
@@ -469,8 +491,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[5 <./assets/Robot_AMR.jpg>]
-<assets/amr_sort.jpg, id=24, 770.88pt x 560.0925pt>
+[6 <./assets/Robot_AMR.jpg>]
+<assets/amr_sort.jpg, id=30, 770.88pt x 560.0925pt>
 File: assets/amr_sort.jpg Graphic file (type jpg)
 <use assets/amr_sort.jpg>
 Package pdftex.def Info: assets/amr_sort.jpg  used on input line 40.
@@ -483,7 +505,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[6 <./assets/amr_sort.jpg>]
+[7 <./assets/amr_sort.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.61858pt, for example:
@@ -491,8 +513,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[7]
-<assets/perception.png, id=33, 681.54625pt x 498.86375pt>
+[8]
+<assets/perception.png, id=39, 681.54625pt x 498.86375pt>
 File: assets/perception.png Graphic file (type png)
 <use assets/perception.png>
 Package pdftex.def Info: assets/perception.png  used on input line 87.
@@ -505,7 +527,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[8 <./assets/perception.png>]
+[9 <./assets/perception.png>]
 Overfull \hbox (14.25752pt too wide) in paragraph at lines 111--114
 \T1/cmr/m/n/12 Le robot doit ^^eatre ca-pa-ble de se d^^e9-placer de fa^^e7on s^^fbre ^^e0 travers l'espace li-bre de l'environnement,
  []
@@ -517,7 +539,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[9]) (Parts/Chapter2.tex
+[10]) (Parts/Chapter2.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.61858pt, for example:
@@ -525,35 +547,51 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
 
-[10]
+[11]
 Chapter 3.
-) (Parts/Chapter3.tex [11
+[12
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[13]) (Parts/Chapter3.tex
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[14]
 Chapter 4.
-) (Parts/Chapter4.tex [12
-
-]
-Chapter 5.
-) [13
+) [15
 
 ] (Parts/conclusion.tex) (main.bbl) (Parts/resume.tex)
 No file main.gls.
-[14
+[16
 
-] (main.aux) ) 
+] (main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 10233 strings out of 478583
- 174573 string characters out of 2841500
- 505990 words of memory out of 3000000
- 28198 multiletter control sequences out of 15000+600000
+ 10235 strings out of 478583
+ 174740 string characters out of 2841500
+ 506029 words of memory out of 3000000
+ 28202 multiletter control sequences out of 15000+600000
  480415 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,11n,131p,1137b,366s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 91i,12n,131p,1137b,366s stack positions out of 10000i,1000n,20000p,200000b,80000s
  </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk>
-Output written on main.pdf (14 pages, 2750765 bytes).
+Output written on main.pdf (16 pages, 3487780 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
+ 328 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

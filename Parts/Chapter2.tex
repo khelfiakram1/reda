@@ -1,2 +1,119 @@
+\chapter{Modélisation et calibrage de cameras}
+\section{Introduction :}
+Ce chapitre est consacré à la description du modèle qui correspond au processus de 
+formation des images prises par une caméra. C'est pourquoi nous allons présenter le modèle 
+sténopé qui peut nous permettre l'accès aux paramètres extrinsèques et intrinsèques de la 
+caméra ainsi que les techniques utilisées pour son calibrage. Nous présenterons les relations 
+ou les transformations homogènes entre les différents repères à savoir ; le repère caméra, le 
+repère robot et le repère monde.
+\section{Modélisation de la Caméra :}
+\subsection{Conception}
+Une caméra doit réaliser une transformation ponctuelle qui fait passer d’un point 
+physique de l’espace réel 3D à un point 2D sur le plan image. Ce qui revient à une 
+transformation mathématique de R3 vers R2.
+Il existe plusieurs modèles dans la modélisation de la formation des images numériques. 
+Notre étude prend comme modèle celui du sténopé ; appelé également le modèle perspectif 
+(pin-hole en anglais) ; c'est un dispositif optique et le plus utilisé dans la vision par ordinateur. 
+Ce modèle permet d'établir une relation entre un point de coordonnées 3D de la scène 
+observée et sa projection dans l'image en 2D.
+\subsection{ Composants d'une caméra :}
+Une caméra se compose d'une boîte dont l'une de ses faces est percée d'un trou minuscule 
+qui laisse entrer la lumière comme indique la figure (3.1). 
+L'image vient se former sur la face opposée au trou et celle-ci peut être capturée en y 
+plaçant un support photosensible (papier photographique).
 
-\chapter{Systéme de vision et calibrage de cameras}
+image 
+
+Une caméra perspective peut en effet être modélisée grâce au modèle du sténopé comme 
+l'illustre la figure (3.2). Ce modèle associe à la caméra un repère cartésien ; ce repère dont son 
+origine se situe sur le centre optique C est défini comme Rc = [Oc Xc Yc Zc ]. La caméra est 
+représentée par un plan image, le plan image est parallèle aux axes Xc et Yc. Il est situé à une 
+distance f de l'origine C appelée distance focale f de ce plan. La droite passant par le centre 
+de projection et perpendiculaire au plan image est L'axe optique. L'intersection de l'axe 
+optique avec le plan image est appelé point principal.
+
+image
+
+\section{Calibration D'une Caméra :}
+Le calibrage consiste à estimer les paramètres intrinsèques et extrinsèques d'un modèle de 
+caméra à partir d'un ensemble de points 3-D et de leur image. Il s'agit donc d'estimer les 
+éléments de la matrice (3.7) ; Cette étape est incontournable pour de nombreuses applications 
+de vision par l’ordinateur.Le calibrage de la caméra a été préalablement traité par la communauté de la 
+photogrammétrie. Par conséquent, de nombreuses méthodes de calibrage ont été proposées
+dans la littérature. Ces approches sont généralement classifiées en deux catégories :
+\subsection{Calibrage avec un objet 3D de référence ou une mire :}
+Cette technique utilise l’observation d’objets en 3D avec des coordonnées connues. Les 
+objets de calibrage (mire) (figure (3.7)) sont généralement des points répartis sur des plans 
+orthogonaux ou sur un plan translaté dans la direction de sa normale. Le calcul peut alors être 
+effectué de façon relativement simple [dib11].
+\subsection{Calibrage automatique (ou auto-calibrage) :}
+Dans cette technique, Le mouvement connu de la caméra filmant une scène statique est 
+utilisé pour poser des contraintes sur les paramètres intrinsèques prenant en compte la rigidité 
+des objets filmés en utilisant uniquement les informations de l’image [dib11].
+Nous avons opté pour la première famille ; sachant qu'elle est disponible sur internet " 
+camera calibration toolbox for matlab". Elle consiste à calibrer la caméra à partir de 
+plusieurs images d'une mire. Prises sous des points de vue différents comme indique la figure
+(3.8).
+
+image1
+image2
+
+Les positions des coins de chaque carré de la mire sont alors extraites puis raffinées en 
+cas de distorsion. Ensuite les paramètres de la caméra sont déterminés par optimisation non 
+linéaire.
+\section{Résultat de la calibration de la caméra :}
+Nous avons utilisé une webcam, type Logitech 720 hp (figure (3.9)) pour avoir un 
+modèle et procéder à l'expérimentation. La caméra est placée sur un robot mobile qui se 
+trouve au niveau du département d'électronique pour déterminer les paramètres intrinsèques 
+de la caméra obtenus lors de la phase de calibrage. Leurs valeurs sont résumées dans le 
+tableau (3.1).
+
+image
+
+tableau
+
+La figure suivante présente le repère de la caméra Rc(Oc,Xc,Yc,Zc). La pyramide 
+rouge correspond au champ de vue effectif de la caméra défini par le plan d'image.
+
+image
+
+Sur cette nouvelle figure, chaque position et orientation de la caméra sont représentées
+par une pyramide verte par rapport à chaque image de calibration.
+Estimation relative de la pose d'une caméra par rapport à chaque image de 
+calibration.
+%http://eprints.univ-batna2.dz/1125/1/ing%20Bouhamatou%20Zoulikha.pdf
+
+image 
+
+\section{ Définition des repères : }
+La modélisation du robot s'appuie sur différents repères Figure (3.11) définis comme suit :
+R(O,XY,Y: Le repère lié à la scène repère monde)
+Rr(Or,Xr,Yr,Yr): Le repère lié à la base mobile
+Rc(Oc,Xc,Yc,Yc): Le repère lié à la caméra
+
+Pour la base mobile ; la position est représentée par les coordonnées (x,y) du point, Or dans le repère Rr tandis que l'orientation est donnée par l'angle T .la position de la caméra dans le repère est décrite par le vecteur Oc Or=(T,O,H).
+Qb(X0,Y0,Z0,1): Un point de trajectoire est exprimé dans le repère monde. Sa projection 
+dans le plan image est Q1(U1,V1,1) Alors, comme nous l'avons vu la relation :Q1=K*Tcb*Qb
+Après calibrage, la matrice K est déterminée et le problème consiste ensuite à trouver la 
+Tcb
+La relation entre le point de l'espace dans le repère monde et repère caméra est :
+Qc=Tcr*Trb*Qb
+\section{Résultats de Simulations et discussion :}
+Pour effectuer un asservissement visuel avec les paramètres obtenus, Nous avons 
+procéder à une manipulation qui consiste à fournir au robot mobile les coordonnées 
+échantillonnées d'une trajectoire que nous avons tracé sur une surface bien illuminée. Pour 
+vérifier l'exactitude des coordonnées mesurées, nous avons choisi deux points sur la 
+trajectoire à poursuivre en calculant leurs valeurs et les comparer avec celles mesurées (figure 
+(3.13)). Les résultats de comparaison sont très satisfaisants et l'erreur est presque inexistante. 
+ - la position de la caméra par rapport au repère monde est : 
+[X,Y,Z]pow(r) = [20cm, 25cm, 30 cm]pow(T)
+ -L'angle de rotation a été choisi entre le repère caméra et le repère monde.
+
+ image tableau 
+ \section{.Conclusion :}
+ Après avoir présenté la partie calibrage et modélisation de la caméra nous avons procédé 
+au calibrage d'une Webcam caméra que nous avons choisi en tenant compte du prix et de la 
+qualité. Cette étape est nécessaire pour déterminer les paramètres intrinsèques et extrinsèques 
+de la caméra. La modélisation de la caméra présente la projection du point de l'espace 3D à un 
+point 2D sur le plan image par trois transformations élémentaire successives : la 
+transformation rigide, la projection perspective et la transformation affine.

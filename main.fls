@@ -775,6 +775,13 @@ INPUT ./Parts/introductiongle.tex
 INPUT Parts/introductiongle.tex
 INPUT ./Parts/introductiongle.tex
 INPUT Parts/introductiongle.tex
+INPUT ./assets/Evolution_robots_autonomes.png
+INPUT ./assets/Evolution_robots_autonomes.png
+INPUT assets/Evolution_robots_autonomes.png
+INPUT ./assets/Evolution_robots_autonomes.png
+INPUT ./assets/Evolution_robots_autonomes.png
+INPUT ./assets/Evolution_robots_autonomes.png
+INPUT ./assets/Evolution_robots_autonomes.png
 INPUT ./Parts/Chapter1.tex
 INPUT Parts/Chapter1.tex
 INPUT ./Parts/Chapter1.tex
@@ -820,10 +827,6 @@ INPUT ./Parts/Chapter3.tex
 INPUT Parts/Chapter3.tex
 INPUT ./Parts/Chapter3.tex
 INPUT Parts/Chapter3.tex
-INPUT ./Parts/Chapter4.tex
-INPUT Parts/Chapter4.tex
-INPUT ./Parts/Chapter4.tex
-INPUT Parts/Chapter4.tex
 INPUT ./Parts/conclusion.tex
 INPUT Parts/conclusion.tex
 INPUT ./Parts/conclusion.tex
