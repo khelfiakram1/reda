@@ -1,5 +1,6 @@
 \contentsline {chapter}{\numberline {1}Introductions g^^c3^^a9nerale}{4}{}%
-\contentsline {chapter}{\numberline {2}Mod^^c3^^a9lisation et commande d'un robot mobile}{6}{}%
+\contentsline {section}{\numberline {1.1}}{5}{}%
+\contentsline {chapter}{\numberline {2}Les robots mobiles autonomes}{6}{}%
 \contentsline {section}{\numberline {2.1}Description d'un robot mobile autonome}{6}{}%
 \contentsline {subsection}{\numberline {2.1.1}Quelles diff^^c3^^a9rences entre un AMR et un AGV ? }{7}{}%
 \contentsline {section}{\numberline {2.2}Classification des robots mobiles}{7}{}%
@@ -9,61 +10,60 @@
 \contentsline {subsubsection}{Robot autonome}{8}{}%
 \contentsline {subsection}{\numberline {2.2.2}Classification selon le domaine d'application}{8}{}%
 \contentsline {subsubsection}{Les robots industriels et de service}{8}{}%
-\contentsline {subsubsection}{Les robots militaires}{8}{}%
-\contentsline {subsubsection}{les robots militaires}{8}{}%
-\contentsline {subsubsection}{les robots de laboratoire}{8}{}%
-\contentsline {subsection}{\numberline {2.2.3}Classification selon le type de locomotion}{8}{}%
-\contentsline {subsubsection}{Les robots mobiles ^^c3^^a0 roues}{8}{}%
-\contentsline {subsubsection}{Robots unicycle}{8}{}%
-\contentsline {subsubsection}{Robots tricycle}{8}{}%
-\contentsline {subsubsection}{robots voiture}{8}{}%
-\contentsline {subsubsection}{Robots mobiles omnidirectionnels}{8}{}%
-\contentsline {section}{\numberline {2.3}applications pour ce les robots autonomes}{8}{}%
-\contentsline {section}{\numberline {2.4}Caracteristiques des robot mobile}{9}{}%
-\contentsline {section}{\numberline {2.5}Structure de la commande d^^e2^^80^^99un robot mobile}{11}{}%
-\contentsline {subsection}{\numberline {2.5.1}Perception et mod^^c3^^a9lisation de l'environnement}{11}{}%
-\contentsline {subsection}{\numberline {2.5.2}Communication homme machine}{11}{}%
-\contentsline {subsection}{\numberline {2.5.3}Commande}{12}{}%
-\contentsline {section}{\numberline {2.6}Navigation autonome d^^e2^^80^^99un robot mobile }{12}{}%
-\contentsline {subsection}{\numberline {2.6.1}Localisation}{12}{}%
-\contentsline {subsection}{\numberline {2.6.2}Planification et ex^^c3^^a9cution de mouvements}{12}{}%
-\contentsline {subsection}{\numberline {2.6.3}Suivi de trajectoire }{12}{}%
-\contentsline {subsection}{\numberline {2.6.4}Evitement d^^e2^^80^^99obstacles et parking }{13}{}%
-\contentsline {chapter}{\numberline {3}Mod^^c3^^a9lisation et calibrage de cameras}{14}{}%
-\contentsline {section}{\numberline {3.1}Introduction :}{14}{}%
-\contentsline {section}{\numberline {3.2}Mod^^c3^^a9lisation de la Cam^^c3^^a9ra :}{14}{}%
-\contentsline {subsection}{\numberline {3.2.1}Conception}{14}{}%
-\contentsline {subsection}{\numberline {3.2.2} Composants d'une cam^^c3^^a9ra :}{14}{}%
-\contentsline {section}{\numberline {3.3}Calibration D'une Cam^^c3^^a9ra :}{15}{}%
-\contentsline {subsection}{\numberline {3.3.1}Calibrage avec un objet 3D de r^^c3^^a9f^^c3^^a9rence ou une mire :}{15}{}%
-\contentsline {subsection}{\numberline {3.3.2}Calibrage automatique (ou auto-calibrage) :}{15}{}%
-\contentsline {section}{\numberline {3.4}R^^c3^^a9sultat de la calibration de la cam^^c3^^a9ra :}{15}{}%
-\contentsline {section}{\numberline {3.5} D^^c3^^a9finition des rep^^c3^^a8res : }{16}{}%
-\contentsline {section}{\numberline {3.6}R^^c3^^a9sultats de Simulations et discussion :}{16}{}%
-\contentsline {section}{\numberline {3.7}.Conclusion :}{16}{}%
-\contentsline {chapter}{\numberline {4}Les ouvrages precedents sur les robot mobiles}{17}{}%
-\contentsline {section}{\numberline {4.1}Introduction}{17}{}%
-\contentsline {section}{\numberline {4.2}Le robot mobile SHAKEY:}{17}{}%
-\contentsline {subsection}{\numberline {4.2.1}Description du robot}{18}{}%
-\contentsline {subsection}{\numberline {4.2.2}Syst^^c3^^a9me informatique du robot}{19}{}%
-\contentsline {subsection}{\numberline {4.2.3}Syst^^c3^^a8me d^^c3^^a9cisionnel}{19}{}%
-\contentsline {section}{\numberline {4.3}Le robot mobile JASON}{20}{}%
-\contentsline {subsection}{\numberline {4.3.1}Desciption du v^^c3^^a9hicule}{20}{}%
-\contentsline {subsection}{\numberline {4.3.2}Syst^^c3^^a8me d^^c3^^a9cisionnel}{20}{}%
-\contentsline {subsection}{\numberline {4.3.3}Syst^^c3^^a8me de^^c3^^a9cisionnel}{21}{}%
-\contentsline {section}{\numberline {4.4}Le robot mobile "ROVER"}{21}{}%
-\contentsline {subsection}{\numberline {4.4.1}Description du v^^c3^^a9hicul}{22}{}%
-\contentsline {subsection}{\numberline {4.4.2}syst^^c3^^a9me Informatique}{22}{}%
-\contentsline {subsection}{\numberline {4.4.3}Syst^^c3^^a9me d^^c3^^a9cisionnel}{22}{}%
-\contentsline {section}{\numberline {4.5}Mod^^c3^^a9lisation de la Cam^^c3^^a9ra :}{25}{}%
-\contentsline {subsection}{\numberline {4.5.1}Conception}{25}{}%
-\contentsline {subsection}{\numberline {4.5.2} Composants d'une cam^^c3^^a9ra :}{25}{}%
-\contentsline {section}{\numberline {4.6}Calibration D'une Cam^^c3^^a9ra :}{25}{}%
-\contentsline {subsection}{\numberline {4.6.1}Calibrage avec un objet 3D de r^^c3^^a9f^^c3^^a9rence ou une mire :}{25}{}%
-\contentsline {subsection}{\numberline {4.6.2}Calibrage automatique (ou auto-calibrage) :}{26}{}%
-\contentsline {section}{\numberline {4.7}R^^c3^^a9sultat de la calibration de la cam^^c3^^a9ra :}{26}{}%
-\contentsline {section}{\numberline {4.8} D^^c3^^a9finition des rep^^c3^^a8res : }{26}{}%
-\contentsline {section}{\numberline {4.9}R^^c3^^a9sultats de Simulations et discussion :}{27}{}%
-\contentsline {section}{\numberline {4.10}.Conclusion :}{27}{}%
-\contentsline {chapter}{\numberline {5}R^^c3^^a9sultats et simulation}{28}{}%
-\contentsline {chapter}{\numberline {6}Conclusion g^^c3^^a9nerale}{29}{}%
+\contentsline {subsubsection}{Les robots militaires}{9}{}%
+\contentsline {subsubsection}{les robots de laboratoire}{9}{}%
+\contentsline {subsection}{\numberline {2.2.3}Classification selon le type de locomotion}{9}{}%
+\contentsline {subsubsection}{Les robots mobiles ^^c3^^a0 roues}{9}{}%
+\contentsline {subsubsection}{Robots unicycle}{9}{}%
+\contentsline {subsubsection}{Robots tricycle}{9}{}%
+\contentsline {subsubsection}{robots voiture}{9}{}%
+\contentsline {subsubsection}{Robots mobiles omnidirectionnels}{10}{}%
+\contentsline {subsection}{\numberline {2.2.4}Les avantages des diff^^c3^^a9rents types de robots }{10}{}%
+\contentsline {subsubsection}{Uicycle}{10}{}%
+\contentsline {subsubsection}{Voiture}{10}{}%
+\contentsline {subsubsection}{Omnidirectionnel}{10}{}%
+\contentsline {subsection}{\numberline {2.2.5}Les inconv^^c3^^a9nients des diff^^c3^^a9rents types de robots}{10}{}%
+\contentsline {subsubsection}{Unicycle}{10}{}%
+\contentsline {subsubsection}{Tricycle}{10}{}%
+\contentsline {subsubsection}{Voiture}{10}{}%
+\contentsline {subsubsection}{Omnidirectionnel}{10}{}%
+\contentsline {subsection}{\numberline {2.2.6}Les robots mobiles a chenilles}{11}{}%
+\contentsline {subsection}{\numberline {2.2.7}Les robots humano^^c3^^afdes}{11}{}%
+\contentsline {subsection}{\numberline {2.2.8}Les robots mobiles rampants}{11}{}%
+\contentsline {section}{\numberline {2.3}applications pour ce les robots autonomes}{11}{}%
+\contentsline {section}{\numberline {2.4}Caracteristiques des robot mobile}{13}{}%
+\contentsline {section}{\numberline {2.5}Structure de la commande d^^e2^^80^^99un robot mobile}{14}{}%
+\contentsline {subsection}{\numberline {2.5.1}Perception et mod^^c3^^a9lisation de l'environnement}{14}{}%
+\contentsline {subsection}{\numberline {2.5.2}Communication homme machine}{15}{}%
+\contentsline {subsection}{\numberline {2.5.3}Commande}{15}{}%
+\contentsline {section}{\numberline {2.6}Navigation autonome d^^e2^^80^^99un robot mobile }{15}{}%
+\contentsline {subsection}{\numberline {2.6.1}Localisation}{15}{}%
+\contentsline {subsection}{\numberline {2.6.2}Planification et ex^^c3^^a9cution de mouvements}{15}{}%
+\contentsline {subsection}{\numberline {2.6.3}Suivi de trajectoire }{16}{}%
+\contentsline {subsection}{\numberline {2.6.4}Evitement d^^e2^^80^^99obstacles et parking }{16}{}%
+\contentsline {chapter}{\numberline {3}Les ouvrages precedents sur les robot mobiles}{17}{}%
+\contentsline {section}{\numberline {3.1}Introduction}{17}{}%
+\contentsline {section}{\numberline {3.2}Le robot mobile SHAKEY:}{17}{}%
+\contentsline {subsection}{\numberline {3.2.1}Description du robot}{18}{}%
+\contentsline {subsection}{\numberline {3.2.2}Syst^^c3^^a9me informatique du robot}{19}{}%
+\contentsline {subsection}{\numberline {3.2.3}Syst^^c3^^a8me d^^c3^^a9cisionnel}{19}{}%
+\contentsline {section}{\numberline {3.3}Le robot mobile JASON}{20}{}%
+\contentsline {subsection}{\numberline {3.3.1}Desciption du v^^c3^^a9hicule}{20}{}%
+\contentsline {subsection}{\numberline {3.3.2}Syst^^c3^^a8me d^^c3^^a9cisionnel}{20}{}%
+\contentsline {subsection}{\numberline {3.3.3}Syst^^c3^^a8me de^^c3^^a9cisionnel}{21}{}%
+\contentsline {section}{\numberline {3.4}Le robot mobile "ROVER"}{21}{}%
+\contentsline {subsection}{\numberline {3.4.1}Description du v^^c3^^a9hicul}{22}{}%
+\contentsline {subsection}{\numberline {3.4.2}syst^^c3^^a9me Informatique}{22}{}%
+\contentsline {subsection}{\numberline {3.4.3}Syst^^c3^^a9me d^^c3^^a9cisionnel}{22}{}%
+\contentsline {section}{\numberline {3.5}Mod^^c3^^a9lisation de la Cam^^c3^^a9ra :}{25}{}%
+\contentsline {subsection}{\numberline {3.5.1}Conception}{25}{}%
+\contentsline {subsection}{\numberline {3.5.2} Composants d'une cam^^c3^^a9ra :}{25}{}%
+\contentsline {section}{\numberline {3.6}Calibration D'une Cam^^c3^^a9ra :}{25}{}%
+\contentsline {subsection}{\numberline {3.6.1}Calibrage avec un objet 3D de r^^c3^^a9f^^c3^^a9rence ou une mire :}{25}{}%
+\contentsline {subsection}{\numberline {3.6.2}Calibrage automatique (ou auto-calibrage) :}{26}{}%
+\contentsline {section}{\numberline {3.7}R^^c3^^a9sultat de la calibration de la cam^^c3^^a9ra :}{26}{}%
+\contentsline {section}{\numberline {3.8} D^^c3^^a9finition des rep^^c3^^a8res : }{26}{}%
+\contentsline {section}{\numberline {3.9}R^^c3^^a9sultats de Simulations et discussion :}{27}{}%
+\contentsline {section}{\numberline {3.10}.Conclusion :}{27}{}%
+\contentsline {chapter}{\numberline {4}R^^c3^^a9sultats et simulation}{28}{}%
+\contentsline {chapter}{\numberline {5}Conclusion g^^c3^^a9nerale}{29}{}%

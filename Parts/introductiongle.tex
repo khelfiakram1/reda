@@ -27,3 +27,25 @@ Les premiers robots mobiles autonomes (RMA) avaient en fait une autonomie très 
 La première méthode proposée pour permettre aux RMA de s'autogérer consiste à "aider" les robots industriels en s'adaptant à leur environnement. Avec le développement de la technologie et de la technologie, les robots "voient" plus et plus vite, "pensent" plus vite, et il devient possible d'explorer moins de travail et moins d'espace fixe. La véritable autonomie des robots offrira de nombreuses perspectives, et dans cet espoir, la robotique mobile autonome devenir une discipline scientifique en soi.
 
 Les robots de service (assistance dans les hôpitaux, les aéroports, les bureaux, les usines ou les habitations), robots de maintenance pour les environnements dangereux ou difficiles d'accès pour l'homme (sous-marin, champs de mines, espace, centrales nucléaires), robots de divertissement (comme celui de Sony récemment sorti de Le Japon des chiens robots et même des véhicules intelligents (voitures autonomes ou systèmes d'assistance) sont quelques exemples d'applications Potentiel des RMA.
+Les résultats obtenus dans ces domaines au cours des dix dernières années témoignent
+des progrès considérables réalisés. Pourtant, depuis Shakey, peu de RMA sont réellement
+« sortis » des laboratoires pour se confronter au monde réel. La raison principale en est le
+nombre important de problèmes technologiques et scientifiques encore non-résolus pour
+des environnements incertains (informations incomplètes, bruitées, imprécises et/ou im-
+prédictibles), dynamiques (présence d'obstacles mobiles, changeants, déformables et /ou
+déplaçables) et ouverts (virtuellement illimités). De telles caractéristiques définissent
+les milieux dans lequel l'Homme évolue et auxquels les RMA sont destinés.
+\section*{Probléme abordé dans ce document}
+
+Le problème abordé dans ce document est celui de la « navigation autonome en
+environnement incertain et dynamique ». L'objectif est de développer des modèles et
+des techniques informatiques permettant à un robot terrestre de se déplacer de manière
+autonome, dans un environnement mal maîtrisé
+et en présence d'obstacles mobiles. Nous avons étudié deux thèmes importants
+\section{}
+En présence d'obstacles mobiles, cela implique de faire des hypothèses, notam-
+ment sur les trajectoires des obstacles (bornées dans le temps) et les mouvements
+autorisés du robot. Ces hypothèses pouvant s'avérer inexactes, l'actualisation des
+connaissances et la prise de décision doivent se faire de manière itérative et dans un
+temps court et borné dépendant de la tâche (nous parlerons de contrainte temps-
+réel). Pour assurer la sécurité du robot, ce temps de réponse devra être d'autant plus court que les accélérations possibles des obstacles seront importantes.

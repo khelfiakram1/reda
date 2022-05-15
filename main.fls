@@ -782,12 +782,12 @@ INPUT ./assets/Evolution_robots_autonomes.png
 INPUT ./assets/Evolution_robots_autonomes.png
 INPUT ./assets/Evolution_robots_autonomes.png
 INPUT ./assets/Evolution_robots_autonomes.png
-INPUT ./Parts/Chapter1.tex
-INPUT Parts/Chapter1.tex
-INPUT ./Parts/Chapter1.tex
-INPUT Parts/Chapter1.tex
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecrm1728.tfm
 INPUT /Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/ecbx1728.tfm
+INPUT ./Parts/Chapter1.tex
+INPUT Parts/Chapter1.tex
+INPUT ./Parts/Chapter1.tex
+INPUT Parts/Chapter1.tex
 INPUT ./assets/robot_autonome.jpg
 INPUT ./assets/robot_autonome.jpg
 INPUT assets/robot_autonome.jpg
@@ -819,10 +819,6 @@ INPUT ./assets/perception.png
 INPUT ./assets/perception.png
 INPUT ./assets/perception.png
 INPUT ./assets/perception.png
-INPUT ./Parts/Chapter2.tex
-INPUT Parts/Chapter2.tex
-INPUT ./Parts/Chapter2.tex
-INPUT Parts/Chapter2.tex
 INPUT ./Parts/chapter2bis.tex
 INPUT Parts/chapter2bis.tex
 INPUT ./Parts/chapter2bis.tex

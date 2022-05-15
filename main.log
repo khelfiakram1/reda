@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.22)  15 MAY 2022 00:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.3.22)  15 MAY 2022 16:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -479,12 +479,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 Chapter 2.
-<assets/robot_autonome.jpg, id=23, 1806.75pt x 1129.21875pt>
+<assets/robot_autonome.jpg, id=24, 1806.75pt x 1129.21875pt>
 File: assets/robot_autonome.jpg Graphic file (type jpg)
 <use assets/robot_autonome.jpg>
 Package pdftex.def Info: assets/robot_autonome.jpg  used on input line 7.
 (pdftex.def)             Requested size: 398.33858pt x 248.96304pt.
-<assets/Robot_AMR.jpg, id=24, 1204.5pt x 630.355pt>
+<assets/Robot_AMR.jpg, id=25, 1204.5pt x 630.355pt>
 File: assets/Robot_AMR.jpg Graphic file (type jpg)
 <use assets/Robot_AMR.jpg>
 Package pdftex.def Info: assets/Robot_AMR.jpg  used on input line 17.
@@ -494,97 +494,105 @@ Package pdftex.def Info: assets/Robot_AMR.jpg  used on input line 17.
  <./assets/robot_autonome.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7 <./assets/Robot_AMR.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-<assets/amr_sort.jpg, id=38, 770.88pt x 560.0925pt>
+Overfull \hbox (32.3347pt too wide) in paragraph at lines 58--59
+\T1/cmr/m/n/12 Larobotique de lab-o-ra-toireest l'utilisation der-obots-dans les lab-o-ra-toires de-bi-olo-gieou de chimie,pour
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+<assets/amr_sort.jpg, id=47, 770.88pt x 560.0925pt>
 File: assets/amr_sort.jpg Graphic file (type jpg)
 <use assets/amr_sort.jpg>
-Package pdftex.def Info: assets/amr_sort.jpg  used on input line 67.
+Package pdftex.def Info: assets/amr_sort.jpg  used on input line 143.
 (pdftex.def)             Requested size: 398.33858pt x 289.41231pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9 <./assets/amr_sort.jpg>]
+[12 <./assets/amr_sort.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10]
-<assets/perception.png, id=45, 681.54625pt x 498.86375pt>
+[13]
+<assets/perception.png, id=55, 681.54625pt x 498.86375pt>
 File: assets/perception.png Graphic file (type png)
 <use assets/perception.png>
-Package pdftex.def Info: assets/perception.png  used on input line 114.
+Package pdftex.def Info: assets/perception.png  used on input line 190.
 (pdftex.def)             Requested size: 398.33858pt x 291.5715pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./assets/perception.png>]
-Overfull \hbox (14.25752pt too wide) in paragraph at lines 138--141
+[14 <./assets/perception.png>]
+Overfull \hbox (14.25752pt too wide) in paragraph at lines 214--217
 \T1/cmr/m/n/12 Le robot doit ^^eatre ca-pa-ble de se d^^e9-placer de fa^^e7on s^^fbre ^^e0 travers l'espace li-bre de l'environnement,
  []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
-
-[12]) (Parts/Chapter2.tex
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
-
-[13]
-Chapter 3.
-[14
-
-]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]) (Parts/chapter2bis.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.61858pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [16]
-Chapter 4.
+Chapter 3.
 
 Overfull \hbox (3.23227pt too wide) in paragraph at lines 8--9
 []\T1/cmr/m/n/12 Le robot Shakey pour-rait anal-yser les com-man-des et les d^^e9-com-poser lui-m^^eame en morceaux
@@ -710,11 +718,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27]
-Chapter 5.
+Chapter 4.
 ) (Parts/Chapter4.tex [28
 
 ]
-Chapter 6.
+Chapter 5.
 ) [29
 
 ] (Parts/conclusion.tex) (main.bbl) (Parts/resume.tex)
@@ -727,17 +735,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10290 strings out of 478583
- 176211 string characters out of 2841500
- 508094 words of memory out of 3000000
- 28244 multiletter control sequences out of 15000+600000
+ 10285 strings out of 478583
+ 176095 string characters out of 2841500
+ 508095 words of memory out of 3000000
+ 28242 multiletter control sequences out of 15000+600000
  480415 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,12n,131p,1137b,368s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 91i,11n,131p,1137b,368s stack positions out of 10000i,1000n,20000p,200000b,80000s
  </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1728.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk> </Users/mac/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx2488.pk>
-Output written on main.pdf (30 pages, 5153499 bytes).
+Output written on main.pdf (30 pages, 5155322 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
+ 415 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

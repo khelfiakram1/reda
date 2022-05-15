@@ -1,4 +1,4 @@
-\chapter{Modélisation et commande d'un robot mobile}
+\chapter{Les robots mobiles autonomes}
 \section{Description d'un robot mobile autonome}
 AGV, AMR, Cobots, robots mobiles, exosquelettes, robots collaboratifs … la robotique industrielle est devenue un vaste domaine dans lequel il n’est pas évident de se repérer. Cet article traite de la notion de Robot Mobile Autonome, dit AMR.
 
@@ -32,22 +32,97 @@ La classification des robots se fait selon plusieurs critères.
 Il est important de noter que l’expression « robots mobiles » bien que désignant l’ensemble des robots à base mobile (par opposition aux robots manipulateurs), est généralement employé afin de désigner les robots mobiles terrestres.
 %https://www.ummto.dz/dspace/bitstream/handle/ummto/7333/HamoudiAhcene.pdf
 \subsection{Classification selon le degré d'autonomie}
+Un robot autonome  doté de capacités décisionnelles et de moyens d’acquisition et de traitements de données lui permettant d’accomplir sous contrôle humain réduit voire même absent un certain nombre de tâches, dans un environnement connu ou non, donc on peut classer les robots mobiles de la manière suivante :
+
 \subsubsection{Robot télécommandé}
+Ce sont des robots commandé par un opérateur (machines ou être humain), qui leurs dicte chaque tâche élémentaire à accomplir (avancer, reculer, tourner, etc.).
 \subsubsection{Robot semi-autonome}
+Ces types de robots effectuent un certain nombre d’opérations par eux même d’une façon complètement autonome mais il peut être interrompu dans n'importe quel momment pour recevoir de nouvelles commandes dictées par l'opérateur .
+
 \subsubsection{Robot autonome}
+On dit qu'un  robot est complètement autonome s’il est capable d’adapter son comportement à l’environnement dans lequel il évolue.
+L’autonomie est la capacité propre d’un système sans équipage, à capter, percevoir, analyser, communiquer, planifier, et prendre des décisions et agir  les objectifs qupour atteindre lui ont été assignés.
 
 \subsection{Classification selon le domaine d'application}
+L’un des plus grands avantages des robots mobiles est le fait que leur domaine d’application est illimité, nous présentons ici quelques domaines d’application :
+
 \subsubsection{Les robots industriels et de service}
+La robotique industrielle est  définie par l'ISO comme un contrôle automatique, polyvalent manipulateur programmable dans trois ou plusieurs axes.
+Les applications typiques incluent des robots de soudage, de peinture et d'assemblage. La robotique industrielle inspecte les produits, rapidement et précisément.
+Les robots industriels sont très utilisés en automobile, leur conception nécessite  un très haut niveau dans le domaine de l'ingénierie.
+Quant aux robots de service, ils sont destinés à aider des handicapés, à guider les aveugles ainsi qu’à piloter des voitures automatiques.
 \subsubsection{Les robots militaires}
-\subsubsection{les robots militaires}
+Appelé arme autonome, est un robot autonome contrôlé à distance, conçu pour des applications militaires. Les drones sont une sous-classe des robots militaires.
+Ce champ d’application présente l’intérêt de fournir des spécificatins accrues telles la vitesse des véhicules, leurs capacités de franchissement d’obstacles, ainsi que leur rapidité de réaction en font des robots de très hautes performances.
 \subsubsection{les robots de laboratoire}
+Larobotique de laboratoireest l'utilisation derobotsdans les laboratoires debiologieou de chimie,pour ce la les sociétés pharmaceutiques utilisent des robots pour la synthèse de nouvelles entités chimiques ou pharmaceutiques afin de tester la valeur des matières chimiques.
+
 
 \subsection{Classification selon le type de locomotion}
 \subsubsection{Les robots mobiles à roues}
+La mobilité par roues est la structure mécanique la plus utilisée en robotique mobile,Il assure un déplacement aisé, mais nécessite un sol relativement plat. On distingue plusieurs classes de robots à roues, déterminées principalement par la position et le nombre de roues utilisées. Nous citerons ici les classes principales de robots à roues.
 \subsubsection{Robots unicycle}
+Un robot de type unicycle est actionné soit par une seule roue ou par deux roues indépendantes, on utilise (gyroscope) et  (accéléromètre) pour assurer sa stabilité. Son centre de rotation est situé sur l’axe reliant les deux roues motrices. 
+Un robot unicycle celui qui bouge dans un plan 2D ayant une certaine vitesse de déplacement vers l’avant, mais aucun mouvement latéral instantané, car ce type de robots sont un système non-holonome. Ils sont donc incapables d’avoir un déplacement dans une direction perpendiculaire aux roues de locomotion.
 \subsubsection{Robots tricycle}
+Un robot de type tricycle est constitué de deux roues fixes placées sur un même axe et d’une roue libre  centrée. Le mouvement du robot est alors donné par la vitesse des roues fixes et son orientation est assurée par la roue libre. 
+C’est là aussi un robot non-holonome. En effet, il lui est impossible de ce déplacé dans une direction perpendiculaire aux roues fixes.
 \subsubsection{robots voiture}
+Un robot de type voiture est semblable au robot tricycle, sauf qu’il est constitué de deux roues fixes placées sur un même axe et de deux roues centrées orientables.    Le robot de type voiture est cependant plus stable . Toutes les autres propriétés du robot voiture sont identiques au robot tricycle.L’un des plus grands projets dans ce domaine est le projet développé par « Google » le « Google Self-Driving Car Project ».
+
+image 
 \subsubsection{Robots mobiles omnidirectionnels}
+Un robot mobile est  omnidirectionnel si l’on peut agir indépendamment sur la vitesse de translation selon les axes x et y et la vitesse de rotation autour de z. En général constitué de trois roues décentrées orientables qui sont placées de manière à former un triangle équilatéral.
+L’énorme avantage de ce robot  est qu’il est holonome,Mais ceci ne se fait qu’au dépend d’une complexité mécanique bien plus importante par rapport aux autres types de robots mobiles .
+\subsection{Les avantages des différents types de robots }
+\subsubsection{Uicycle}
+* Stable.
+* Rotation sur soi-meme.
+* Complexité faible.
+\subsubsection*{Tricycle}
+* Complexité mécanique modérée.
+\subsubsection{Voiture}
+* Stable.
+* Complexité mécanique modérée.
+\subsubsection{Omnidirectionnel}
+* Holonome.
+* Stable.
+* Rotation sur soi-meme.
+\subsection{Les inconvénients des différents types de robots}
+\subsubsection{Unicycle}
+* Non-holonome.
+\subsubsection{Tricycle}
+* Non-holonome.
+* Peu stable.
+* Pas de Rotation sur soi-meme.
+\subsubsection{Voiture}
+* Non-holonome.
+* Pas de Rotation sur soi-meme.
+\subsubsection{Omnidirectionnel}
+* Complexité mécanique importante.
+\subsection{Les robots mobiles a chenilles}
+Les robots mobiles à chenilles présentent l’avantage d’une bonne adhérence au sol et d’une faculté de franchissement d’obstacles.L’utilisation est orientée vers l’emploi sur sol accidenté ou de mauvaise qualité au niveau de l’adhérence. Généralement ils sont utilisés  principalement pour la surveillance ou de déminage.
+image 
+\subsection{Les robots humanoïdes}
+Les robots marcheurs sont destinés à réaliser des tâches dont l’accès au site est  dangereux ou impossible à un humain. Leur anatomie a de nombreux degrés de liberté, ce qui permet un rapprochement avec les robots manipulateurs. La locomotion est commandée via des articulations. Les méthodes de commande des articulations définissent le concept d’allure qui assure le déplacement de l’ensemble. C’est des robots bipèdes qui se déplacent de façon complètement autonome.
+Ainsi que même des animaux comme le robot Cheetah de Boston Dynamics qui a marqué l’histoire le 29 mai 2015, car il a réussi une succession de teste (sauts d’obstacles, course, etc.). Et cela de façon complètement autonome.
+On trouve aussi des robots insectes comme le robot Octopodes T8 de Robugtix. L’adaptation au support est un problème spécifique aux robots marcheurs, car la surface de contact entre le robot et le sol est très faible d’où la grande instabilité de ce type de robot. C’est pour remédier à cela que ces robots sont truffés de capteurs en tous genre (capteur de proximité, de contacte, de vision, etc.).
+\subsection{Les robots mobiles rampants}
+La reptation est une solution de locomotion pour un environnement de type « tunnel » ou « galerie »  Le système est composé d’un ensemble de module ayant chacun plusieurs mobilités.
+
+- Le type scolopendre constitue une structure inextensible articulée selon deux axes orthogonaux.
+
+- Le type lombric comprend trois articulations, deux rotations orthogonales et une translation dans le sens du mouvement principal.
+
+- Le type péristaltique consiste à réaliser un déplacement relatif d’un module par rapport aux autres modules voisins.
+
+
+
+
+
+
+
+
 \section{applications pour ce les robots autonomes}
 Un AMR peut intervenir autant sur des missions « simples » telles qu’une préparation de commande ou une opération picking, que dans des concepts d’automatisation plus complexes et globaux, en s’interfaçant à des périphériques comme des convoyeurs, des lignes de production, des îlots intégrés, ou des postes de travail. Principalement utilisés dans le monde de l’Industrie pour déplacer de manière autonome des marchandises (usines, ateliers ou entrepôts, …), l’usage des robots ne sont pas pour autant limités au secteur industriel. Les gains en mobilité attribués au fil des années et leur grande polyvalence ont permis d’élargir largement les applications :
 \begin{itemize}
@@ -57,6 +132,7 @@ Un AMR peut intervenir autant sur des missions « simples » telles qu’une pr�
     \item Dans les univers E-commerce, ils contribuent à la gestion des entrées de colis, la ramasse, le tri, la ventilation, et la gestion des retours et sorties.
     \item Dans les univers E-commerce, ils contribuent à la gestion des entrées de colis, la ramasse, le tri, la ventilation, et la gestion des retours et sorties.
     \item Leur flexibilité leur permet également d’intervenir dans une multitude d’autres domaines, comme le transport, les services et les établissements de santé.
+    \item
 
 \end{itemize}
 
